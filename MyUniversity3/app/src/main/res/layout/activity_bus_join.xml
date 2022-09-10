@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_Join.BusJoinActivity"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    android:id="@+id/bus_join_linear"
+    android:background="#FFFFFF">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="#FFFFFF">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="32dp"
+               android:layout_marginBottom="32dp"
+               android:shadowColor="#33000000"
+               android:shadowDx="5.0"
+               android:shadowDy="5.0"
+               android:shadowRadius="2.0"
+               android:text="업주 회원가입"
+               android:textColor="@color/colorAccent"
+               android:textSize="30dp" />
+
+
+
+                <RadioGroup
+                    android:id="@+id/type_join_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="32dp">
+
+                <RadioButton
+                    android:id="@+id/type_restaurant_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="음식점"
+                    android:textSize="15dp"
+                    android:layout_marginRight="8dp"/>
+
+                <RadioButton
+                    android:id="@+id/type_etcshop_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:text="기타업종"
+                    android:textSize="15dp"
+                    android:layout_marginRight="8dp"/>
+
+                    <Spinner
+                        android:id="@+id/type_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/shop_type"
+                        android:visibility="invisible"></Spinner>
+                </RadioGroup>
+
+           <LinearLayout
+               android:layout_marginHorizontal="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="left">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:shadowColor="#33000000"
+                   android:shadowDx="5.0"
+                   android:shadowDy="5.0"
+                   android:shadowRadius="2.0"
+                   android:text="EMAIL"
+                   android:textColor="@color/colorAccent"
+                   android:textSize="15dp" />
+
+               <EditText
+                   android:id="@+id/email_join_et"
+                   android:layout_marginLeft="8dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="ex) hello123@gmail.com"
+                   android:textSize="15dp"/>
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="left">
+
+               <TextView
+                   android:layout_marginTop="4dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:shadowColor="#33000000"
+                   android:shadowDx="5.0"
+                   android:shadowDy="5.0"
+                   android:shadowRadius="2.0"
+                   android:text="PASSWORD"
+                   android:textColor="@color/colorAccent"
+                   android:textSize="15dp" />
+
+               <EditText
+                   android:layout_marginLeft="8dp"
+                   android:id="@+id/pwd_join_et"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:hint="여섯자리이상"
+                   android:textSize="15dp"/>
+           </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#33000000"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="2.0"
+            android:text="NAME"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+           <EditText
+               android:layout_marginLeft="8dp"
+               android:id="@+id/name_join_et"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="15dp"
+               android:hint="가게이름" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#33000000"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="2.0"
+            android:text="ADDRESS"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_marginLeft="8dp"
+            android:id="@+id/address_join_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left">
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#33000000"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"
+                android:text="TEL_NUMBER"
+                android:textColor="@color/colorAccent"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/telnum_join_et"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/bus_join_menu_linear"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#33000000"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="2.0"
+            android:text="MAIN_MENU"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+
+           <EditText
+               android:id="@+id/menu_join_et"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="ex) 부대찌개,보쌈,분식 "
+               android:textSize="15dp"
+               android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left">
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#33000000"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="2.0"
+            android:text="OPERATING_TIME"
+            android:textColor="@color/colorAccent"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="open:"
+                   android:textSize="15dp"
+                   android:shadowColor="#33000000"
+                   android:shadowDx="5.0"
+                   android:shadowDy="5.0"
+                   android:shadowRadius="2.0"
+                   android:textColor="@color/colorAccent" />
+
+               <Spinner
+                   android:id="@+id/open_spinner"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:entries="@array/operating_time"></Spinner>
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="close:"
+                   android:textSize="15dp"
+                   android:shadowColor="#33000000"
+                   android:shadowDx="5.0"
+                   android:shadowDy="5.0"
+                   android:shadowRadius="2.0"
+                   android:textColor="@color/colorAccent" />
+
+               <Spinner
+                   android:id="@+id/close_spinner"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="2"
+                   android:entries="@array/operating_time"></Spinner>
+           </LinearLayout>
+
+
+           <LinearLayout
+               android:layout_marginLeft="16dp"
+               android:layout_marginRight="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center"
+               android:visibility="visible"
+               android:id="@+id/linear_check">
+
+               <CheckBox
+                   android:id="@+id/takeout_join_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15dp"
+                   android:text="포장가능" />
+
+               <CheckBox
+                   android:id="@+id/reservation_join_btn"
+                   android:layout_marginLeft="8dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15dp"
+                   android:text="예약가능" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginHorizontal="16dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:gravity="center">
+
+               <CheckBox
+                   android:id="@+id/pay_card_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="false"
+                   android:text="카드결제" />
+
+               <CheckBox
+                   android:layout_marginLeft="8dp"
+                   android:id="@+id/pay_cash_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="false"
+                   android:text="현금결제" />
+
+               <CheckBox
+                   android:layout_marginLeft="8dp"
+                   android:id="@+id/pay_toss_btn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:checked="false"
+                   android:text="계좌이체" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_marginHorizontal="32dp"
+               android:id="@+id/linear_bank"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:visibility="gone">
+
+               <Spinner
+                   android:id="@+id/bank"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:entries="@array/bank"></Spinner>
+
+               <EditText
+                   android:id="@+id/input_account"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:textSize="15dp"
+                   android:hint="계좌번호" />
+           </LinearLayout>
+
+           <Button
+               android:id="@+id/join_join_btn"
+               style="?android:attr/borderlessButtonStyle"
+               android:background="#FFFFFF"
+               android:layout_gravity="center"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="JOIN"
+               android:textSize="20dp"
+               android:textColor="@color/colorAccent"
+               android:layout_marginTop="20dp"
+               android:shadowColor="#33000000"
+               android:shadowDx="5.0"
+               android:shadowDy="5.0"
+               android:shadowRadius="2.0"/>
+
+       </LinearLayout>
+</ScrollView>

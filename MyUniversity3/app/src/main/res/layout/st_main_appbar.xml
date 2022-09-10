@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/stmain_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAIN"
+                android:textSize="20dp"
+                android:textColor="@color/colorAccent"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"
+                android:shadowColor="#33000000"
+                android:layout_marginLeft="20dp"/>
+            
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/kko">
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/innergo_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/st_main_request_ripple"
+                    android:text="UNIVERSITY
+                            FACILITY"
+                    android:textColor="#7D268E"
+                    android:textSize="45dp" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#7D268E">
+
+            <Button
+                android:id="@+id/externalgo_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/st_main_request_ripple"
+                android:gravity="center"
+                android:text="EXTERNAL
+                                FACILITY"
+                android:textColor="#FFFFFF"
+                android:textSize="45dp" />
+
+
+        </LinearLayout>
+
+</LinearLayout>

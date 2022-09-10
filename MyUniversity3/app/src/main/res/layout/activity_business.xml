@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BusinessPage.BusinessActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/stmain_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#FFFFFF"
+        android:elevation="6dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FOR BUSINESS"
+            android:textSize="20dp"
+            android:textColor="@color/colorAccent"
+            android:shadowDx="5.0"
+            android:shadowDy="5.0"
+            android:shadowRadius="2.0"
+            android:shadowColor="#33000000"
+            android:layout_marginLeft="20dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="가게의 현재 혼잡도를 선택해주세요."
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"/>
+
+        <ImageView
+            android:id="@+id/congestion_img"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
+    <RadioGroup
+
+        android:id="@+id/Rgroup"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/blackbtn"
+            android:text="영업준비중"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/greenbtn"
+            android:text="여유"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/yellowbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보통"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+        <RadioButton
+            android:id="@+id/redwbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="혼잡"
+            android:layout_weight="1"
+            android:textSize="20dp"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="현재 설정된 영업시간: "
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/setoperating_tv"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00~00:00"
+            android:textSize="15dp"
+            android:textColor="#111111"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="영업 외 시간은 '영업준비중'으로 표시되고,
+                                                        영업시간이 되면 '여유'로 표시됩니다. "
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="영업시간 중 영업 종료를 원하시면 '영업준비중'을 선택해주세요."
+        android:textSize="15dp"
+        android:layout_marginBottom="5dp"/>
+
+
+
+
+
+</LinearLayout>
+

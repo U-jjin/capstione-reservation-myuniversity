@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="220dp"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="right"
+    android:id="@+id/main_drawer_view"
+    android:background="@drawable/stmain_list_shape">
+
+
+            <LinearLayout
+                android:layout_marginVertical="64dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/stmain_drawer_name_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="이름"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:shadowColor="#33000000"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="2.0"/>
+                <TextView
+                    android:id="@+id/stmain_drawer_major_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="전공이름이 적힌다"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:shadowColor="#33000000"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="2.0"/>
+                <TextView
+                    android:id="@+id/stmain_drawer_studentid_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="학번이적힌다"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:shadowColor="#33000000"
+                    android:shadowDx="5.0"
+                    android:shadowDy="5.0"
+                    android:shadowRadius="2.0"/>
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY RESERVATION"
+                android:textSize="15dp"
+                android:textColor="@color/colorAccent"
+                android:shadowColor="#33000000"
+                android:shadowDx="5.0"
+                android:shadowDy="5.0"
+                android:shadowRadius="2.0"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="취소를 원하시는 예약항목을 눌러주세요."
+                android:textSize="12dp"
+                android:textColor="@color/colorAccent" />
+
+            <ListView
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:layout_marginHorizontal="8dp"
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#00FFFFFF"
+                android:dividerHeight="2dp"
+                android:id="@+id/main_drawer_reservationlist" />
+
+</LinearLayout>

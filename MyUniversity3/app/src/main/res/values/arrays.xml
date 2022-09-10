@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="shop_type">
+        <item >카페</item>
+        <item >피시방</item>
+    </string-array>
+
+    <string-array name="major">
+        <item >----학과----</item>
+        <item>컴퓨터정보공학과</item>
+        <item>철도경영물류학과</item>
+        <item>철도인프라시스템공학과</item>
+        <item>철도차량시스템공학과</item>
+        <item>철도전기전자전공학과</item>
+    </string-array>
+
+    <string-array name="bank">
+        <item >은행</item>
+        <item>국민은행</item>
+        <item>기업은행</item>
+        <item>농협</item>
+        <item>수협</item>
+        <item>우리은행</item>
+        <item>하나은행</item>
+    </string-array>
+
+
+    <string-array name="operating_time">
+
+        <item>00:00</item>
+        <item>01:00</item>
+        <item>02:00</item>
+        <item>03:00</item>
+        <item>04:00</item>
+        <item>05:00</item>
+        <item>06:00</item>
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+        <item>23:00</item>
+        <item>24:00</item>
+
+
+
+
+
+
+
+
+
+
+    </string-array>
+
+
+<!--<string-array name ="onehour">-->
+
+    <!--<item>9:00~10:00</item>-->
+    <!--<item>10:00~11:00</item>-->
+    <!--<item>11:00~12:00</item>-->
+    <!--<item>12:00~13:00</item>-->
+    <!--<item>13:00~14:00</item>-->
+    <!--<item>14:00~15:00</item>-->
+    <!--<item>15:00~16:00</item>-->
+    <!--<item>16:00~17:00</item>-->
+    <!--<item>17:00~18:00</item>-->
+<!--</string-array>-->
+
+    <!--<string-array name="twohours">-->
+        <!--<item>9:00~11:00</item>-->
+        <!--<item>11:00~13:00</item>-->
+        <!--<item>13:00~15:00</item>-->
+        <!--<item>15:00~17:00</item>-->
+        <!--<item>17:00~19:00</item>-->
+    <!--</string-array>-->
+
+</resources>

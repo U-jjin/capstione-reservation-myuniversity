@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#E91E63</color>
+    <color name="colorPrimaryDark">#F1F1F1</color>
+    <color name="colorAccent">#641D71</color>
+    <color name="external_base">#E9111111</color>
+    <color name="external_point">#EF3575</color>
+    <color name="external_gray">#A3A1A1</color>
+    <color name="stmain_gray">#626060</color>
+
+
+    <color name="drawer_item_0">#641D71</color>
+    <color name="drawer_item_1">#7D268E</color>
+    <color name="drawer_item_2">#9028A7</color>
+    <color name="drawer_item_3">#AA34C5</color>
+    <color name="drawer_item_4">#CE5DE7</color>
+    <color name="drawer_item_5">#DF91F0</color>
+
+</resources>
+
