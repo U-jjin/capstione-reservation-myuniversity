@@ -11,8 +11,6 @@
 - 개발 환경 : AndroidStudio
 - DB : Firebase
 
-## DB ERD
-
 ## 서비스 구조
 ![화면 캡처 2022-09-10 215549](https://user-images.githubusercontent.com/70012637/189484343-eaf04f5b-191c-4eb6-b1e3-b3c75977bec0.png)
 
